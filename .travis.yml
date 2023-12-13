@@ -8,5 +8,4 @@ before_install:
   - docker build -t  ahmdjerid/docker-react -f Dockerfile.dev .
 
 script: 
-  - docker run  ahmdjerid/docker-react  npm run test -- --coverage
-  - set -e
+  - docker run  -e CI=true ahmdjerid/docker-react  npm run test 
