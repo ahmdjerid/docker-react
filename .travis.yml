@@ -14,11 +14,10 @@ deploy:
   provider: elasticbeanstalk
   region: "us-east-1"
   app: "react-frontend"
-  env: "React-frontend-env "
+  env: "React-frontend-env-1 "
   bucket_name: "elasticbeanstalk-us-east-1-125633457344"
   bucket_path: "react-frontend"
   on: 
     branch: main
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: "$AWS_SECRET_KEY"
-  
